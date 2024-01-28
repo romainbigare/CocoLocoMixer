@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AC209642B69A016002FD2B5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209632B69A016002FD2B5 /* HomeViewModel.swift */; };
+		7AC209662B69A369002FD2B5 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209652B69A369002FD2B5 /* SongModel.swift */; };
+		7AC209682B69A376002FD2B5 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209672B69A376002FD2B5 /* SongView.swift */; };
+		7AC2096B2B69AA92002FD2B5 /* GeometryUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */; };
+		7AC2096F2B69AE44002FD2B5 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */; };
+		7AC209712B69B0C9002FD2B5 /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209702B69B0C9002FD2B5 /* Waveform.swift */; };
+		7AC209732B6AF98F002FD2B5 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */; };
+		7AD49F512B66C8BA005913D9 /* CocoLocoMixerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */; };
+		7AD49F532B66C8BA005913D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F522B66C8BA005913D9 /* HomeView.swift */; };
+		7AD49F552B66C8BD005913D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD49F542B66C8BD005913D9 /* Assets.xcassets */; };
+		7AD49F582B66C8BD005913D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD49F572B66C8BD005913D9 /* Preview Assets.xcassets */; };
+		7AD49F622B66C8BD005913D9 /* CocoLocoMixerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F612B66C8BD005913D9 /* CocoLocoMixerTests.swift */; };
+		7AD49F6C2B66C8BD005913D9 /* CocoLocoMixerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F6B2B66C8BD005913D9 /* CocoLocoMixerUITests.swift */; };
+		7AD49F6E2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F6D2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift */; };
+		7AD49F7B2B66CD46005913D9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F7A2B66CD46005913D9 /* LoadingView.swift */; };
+		7AD49F7E2B66E148005913D9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD49F7D2B66E148005913D9 /* Lottie */; };
+		7AD49F992B66FF4B005913D9 /* loading1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AD49F982B66FF4B005913D9 /* loading1.json */; };
+		7AD49F9C2B67172A005913D9 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F9B2B67172A005913D9 /* Styles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AD49F5E2B66C8BD005913D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AD49F452B66C8BA005913D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD49F4C2B66C8BA005913D9;
+			remoteInfo = CocoLocoMixer;
+		};
+		7AD49F682B66C8BD005913D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AD49F452B66C8BA005913D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD49F4C2B66C8BA005913D9;
+			remoteInfo = CocoLocoMixer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AC209632B69A016002FD2B5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7AC209652B69A369002FD2B5 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		7AC209672B69A376002FD2B5 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryUtil.swift; sourceTree = "<group>"; };
+		7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		7AC209702B69B0C9002FD2B5 /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
+		7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
+		7AD49F4D2B66C8BA005913D9 /* CocoLocoMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoLocoMixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerApp.swift; sourceTree = "<group>"; };
+		7AD49F522B66C8BA005913D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7AD49F542B66C8BD005913D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AD49F572B66C8BD005913D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AD49F5D2B66C8BD005913D9 /* CocoLocoMixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoLocoMixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD49F612B66C8BD005913D9 /* CocoLocoMixerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerTests.swift; sourceTree = "<group>"; };
+		7AD49F672B66C8BD005913D9 /* CocoLocoMixerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoLocoMixerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD49F6B2B66C8BD005913D9 /* CocoLocoMixerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerUITests.swift; sourceTree = "<group>"; };
+		7AD49F6D2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AD49F7A2B66CD46005913D9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7AD49F982B66FF4B005913D9 /* loading1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading1.json; sourceTree = "<group>"; };
+		7AD49F9B2B67172A005913D9 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AD49F4A2B66C8BA005913D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD49F7E2B66E148005913D9 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F5A2B66C8BD005913D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F642B66C8BD005913D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AC209692B69AA84002FD2B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */,
+				7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */,
+				7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7AC2096C2B69AAC7002FD2B5 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				7AC2096D2B69AACF002FD2B5 /* Song */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		7AC2096D2B69AACF002FD2B5 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				7AC209652B69A369002FD2B5 /* SongModel.swift */,
+				7AC209672B69A376002FD2B5 /* SongView.swift */,
+				7AC209702B69B0C9002FD2B5 /* Waveform.swift */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		7AD49F442B66C8BA005913D9 = {
+			isa = PBXGroup;
+			children = (
+				7AD49F4F2B66C8BA005913D9 /* CocoLocoMixer */,
+				7AD49F602B66C8BD005913D9 /* CocoLocoMixerTests */,
+				7AD49F6A2B66C8BD005913D9 /* CocoLocoMixerUITests */,
+				7AD49F4E2B66C8BA005913D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AD49F4E2B66C8BA005913D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F4D2B66C8BA005913D9 /* CocoLocoMixer.app */,
+				7AD49F5D2B66C8BD005913D9 /* CocoLocoMixerTests.xctest */,
+				7AD49F672B66C8BD005913D9 /* CocoLocoMixerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AD49F4F2B66C8BA005913D9 /* CocoLocoMixer */ = {
+			isa = PBXGroup;
+			children = (
+				7AC2096C2B69AAC7002FD2B5 /* Controls */,
+				7AC209692B69AA84002FD2B5 /* Utils */,
+				7AD49F9A2B66FF62005913D9 /* Animations */,
+				7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */,
+				7AD49F7A2B66CD46005913D9 /* LoadingView.swift */,
+				7AD49F522B66C8BA005913D9 /* HomeView.swift */,
+				7AC209632B69A016002FD2B5 /* HomeViewModel.swift */,
+				7AD49F9B2B67172A005913D9 /* Styles.swift */,
+				7AD49F542B66C8BD005913D9 /* Assets.xcassets */,
+				7AD49F562B66C8BD005913D9 /* Preview Content */,
+			);
+			path = CocoLocoMixer;
+			sourceTree = "<group>";
+		};
+		7AD49F562B66C8BD005913D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F572B66C8BD005913D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AD49F602B66C8BD005913D9 /* CocoLocoMixerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F612B66C8BD005913D9 /* CocoLocoMixerTests.swift */,
+			);
+			path = CocoLocoMixerTests;
+			sourceTree = "<group>";
+		};
+		7AD49F6A2B66C8BD005913D9 /* CocoLocoMixerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F6B2B66C8BD005913D9 /* CocoLocoMixerUITests.swift */,
+				7AD49F6D2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift */,
+			);
+			path = CocoLocoMixerUITests;
+			sourceTree = "<group>";
+		};
+		7AD49F9A2B66FF62005913D9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F982B66FF4B005913D9 /* loading1.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AD49F4C2B66C8BA005913D9 /* CocoLocoMixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD49F712B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixer" */;
+			buildPhases = (
+				7AD49F492B66C8BA005913D9 /* Sources */,
+				7AD49F4A2B66C8BA005913D9 /* Frameworks */,
+				7AD49F4B2B66C8BA005913D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoLocoMixer;
+			packageProductDependencies = (
+				7AD49F7D2B66E148005913D9 /* Lottie */,
+			);
+			productName = CocoLocoMixer;
+			productReference = 7AD49F4D2B66C8BA005913D9 /* CocoLocoMixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AD49F5C2B66C8BD005913D9 /* CocoLocoMixerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD49F742B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixerTests" */;
+			buildPhases = (
+				7AD49F592B66C8BD005913D9 /* Sources */,
+				7AD49F5A2B66C8BD005913D9 /* Frameworks */,
+				7AD49F5B2B66C8BD005913D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD49F5F2B66C8BD005913D9 /* PBXTargetDependency */,
+			);
+			name = CocoLocoMixerTests;
+			productName = CocoLocoMixerTests;
+			productReference = 7AD49F5D2B66C8BD005913D9 /* CocoLocoMixerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AD49F662B66C8BD005913D9 /* CocoLocoMixerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD49F772B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixerUITests" */;
+			buildPhases = (
+				7AD49F632B66C8BD005913D9 /* Sources */,
+				7AD49F642B66C8BD005913D9 /* Frameworks */,
+				7AD49F652B66C8BD005913D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD49F692B66C8BD005913D9 /* PBXTargetDependency */,
+			);
+			name = CocoLocoMixerUITests;
+			productName = CocoLocoMixerUITests;
+			productReference = 7AD49F672B66C8BD005913D9 /* CocoLocoMixerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AD49F452B66C8BA005913D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7AD49F4C2B66C8BA005913D9 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7AD49F5C2B66C8BD005913D9 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7AD49F4C2B66C8BA005913D9;
+					};
+					7AD49F662B66C8BD005913D9 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7AD49F4C2B66C8BA005913D9;
+					};
+				};
+			};
+			buildConfigurationList = 7AD49F482B66C8BA005913D9 /* Build configuration list for PBXProject "CocoLocoMixer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AD49F442B66C8BA005913D9;
+			packageReferences = (
+				7AD49F7C2B66E148005913D9 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = 7AD49F4E2B66C8BA005913D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AD49F4C2B66C8BA005913D9 /* CocoLocoMixer */,
+				7AD49F5C2B66C8BD005913D9 /* CocoLocoMixerTests */,
+				7AD49F662B66C8BD005913D9 /* CocoLocoMixerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AD49F4B2B66C8BA005913D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD49F582B66C8BD005913D9 /* Preview Assets.xcassets in Resources */,
+				7AD49F552B66C8BD005913D9 /* Assets.xcassets in Resources */,
+				7AD49F992B66FF4B005913D9 /* loading1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F5B2B66C8BD005913D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F652B66C8BD005913D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AD49F492B66C8BA005913D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC209712B69B0C9002FD2B5 /* Waveform.swift in Sources */,
+				7AC2096F2B69AE44002FD2B5 /* ColorUtil.swift in Sources */,
+				7AC209662B69A369002FD2B5 /* SongModel.swift in Sources */,
+				7AD49F532B66C8BA005913D9 /* HomeView.swift in Sources */,
+				7AD49F512B66C8BA005913D9 /* CocoLocoMixerApp.swift in Sources */,
+				7AC209682B69A376002FD2B5 /* SongView.swift in Sources */,
+				7AD49F7B2B66CD46005913D9 /* LoadingView.swift in Sources */,
+				7AC209642B69A016002FD2B5 /* HomeViewModel.swift in Sources */,
+				7AC209732B6AF98F002FD2B5 /* AudioUtil.swift in Sources */,
+				7AD49F9C2B67172A005913D9 /* Styles.swift in Sources */,
+				7AC2096B2B69AA92002FD2B5 /* GeometryUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F592B66C8BD005913D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD49F622B66C8BD005913D9 /* CocoLocoMixerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD49F632B66C8BD005913D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD49F6C2B66C8BD005913D9 /* CocoLocoMixerUITests.swift in Sources */,
+				7AD49F6E2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AD49F5F2B66C8BD005913D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD49F4C2B66C8BA005913D9 /* CocoLocoMixer */;
+			targetProxy = 7AD49F5E2B66C8BD005913D9 /* PBXContainerItemProxy */;
+		};
+		7AD49F692B66C8BD005913D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD49F4C2B66C8BA005913D9 /* CocoLocoMixer */;
+			targetProxy = 7AD49F682B66C8BD005913D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7AD49F6F2B66C8BD005913D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AD49F702B66C8BD005913D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AD49F722B66C8BD005913D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CocoLocoMixer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AD49F732B66C8BD005913D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CocoLocoMixer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AD49F752B66C8BD005913D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoLocoMixer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CocoLocoMixer";
+			};
+			name = Debug;
+		};
+		7AD49F762B66C8BD005913D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoLocoMixer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CocoLocoMixer";
+			};
+			name = Release;
+		};
+		7AD49F782B66C8BD005913D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoLocoMixer;
+			};
+			name = Debug;
+		};
+		7AD49F792B66C8BD005913D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RB.CocoLocoMixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoLocoMixer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AD49F482B66C8BA005913D9 /* Build configuration list for PBXProject "CocoLocoMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD49F6F2B66C8BD005913D9 /* Debug */,
+				7AD49F702B66C8BD005913D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD49F712B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD49F722B66C8BD005913D9 /* Debug */,
+				7AD49F732B66C8BD005913D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD49F742B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD49F752B66C8BD005913D9 /* Debug */,
+				7AD49F762B66C8BD005913D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD49F772B66C8BD005913D9 /* Build configuration list for PBXNativeTarget "CocoLocoMixerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD49F782B66C8BD005913D9 /* Debug */,
+				7AD49F792B66C8BD005913D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7AD49F7C2B66E148005913D9 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AD49F7D2B66E148005913D9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AD49F7C2B66E148005913D9 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7AD49F452B66C8BA005913D9 /* Project object */;
+}
