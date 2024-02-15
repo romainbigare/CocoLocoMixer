@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2FC29E2B782B1800FBFA09 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FC29D2B782B1800FBFA09 /* BottomBarView.swift */; };
+		7A2FC2A42B78354C00FBFA09 /* PopupAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FC2A32B78354C00FBFA09 /* PopupAddView.swift */; };
+		7A2FC2A62B78408000FBFA09 /* PopupSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FC2A52B78408000FBFA09 /* PopupSearchView.swift */; };
 		7AC209642B69A016002FD2B5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209632B69A016002FD2B5 /* HomeViewModel.swift */; };
-		7AC209662B69A369002FD2B5 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209652B69A369002FD2B5 /* SongModel.swift */; };
+		7AC209662B69A369002FD2B5 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209652B69A369002FD2B5 /* SongViewModel.swift */; };
 		7AC209682B69A376002FD2B5 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209672B69A376002FD2B5 /* SongView.swift */; };
 		7AC2096B2B69AA92002FD2B5 /* GeometryUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */; };
 		7AC2096F2B69AE44002FD2B5 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */; };
-		7AC209712B69B0C9002FD2B5 /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209702B69B0C9002FD2B5 /* Waveform.swift */; };
 		7AC209732B6AF98F002FD2B5 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */; };
+		7AC209772B6D9D11002FD2B5 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209762B6D9D11002FD2B5 /* AppSettings.swift */; };
+		7AC209792B6DC5C2002FD2B5 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC209782B6DC5C2002FD2B5 /* TrackView.swift */; };
+		7AC2097B2B6DC67B002FD2B5 /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2097A2B6DC67B002FD2B5 /* TrackViewModel.swift */; };
 		7AD49F512B66C8BA005913D9 /* CocoLocoMixerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */; };
 		7AD49F532B66C8BA005913D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F522B66C8BA005913D9 /* HomeView.swift */; };
 		7AD49F552B66C8BD005913D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD49F542B66C8BD005913D9 /* Assets.xcassets */; };
@@ -24,7 +29,11 @@
 		7AD49F7B2B66CD46005913D9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F7A2B66CD46005913D9 /* LoadingView.swift */; };
 		7AD49F7E2B66E148005913D9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD49F7D2B66E148005913D9 /* Lottie */; };
 		7AD49F992B66FF4B005913D9 /* loading1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AD49F982B66FF4B005913D9 /* loading1.json */; };
-		7AD49F9C2B67172A005913D9 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD49F9B2B67172A005913D9 /* Styles.swift */; };
+		7AFDDB352B6FFC430029EB32 /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDDB342B6FFC430029EB32 /* Greetings.swift */; };
+		7AFDDB382B7046830029EB32 /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDDB372B7046830029EB32 /* Waveform.swift */; };
+		7AFDDB3A2B7059C70029EB32 /* PlayerTick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDDB392B7059C70029EB32 /* PlayerTick.swift */; };
+		7AFDDB462B71BEAC0029EB32 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDDB452B71BEAC0029EB32 /* Styles.swift */; };
+		7AFDDB4B2B71CA810029EB32 /* AnimatedTabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 7AFDDB4A2B71CA810029EB32 /* AnimatedTabBar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2FC29D2B782B1800FBFA09 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		7A2FC2A32B78354C00FBFA09 /* PopupAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAddView.swift; sourceTree = "<group>"; };
+		7A2FC2A52B78408000FBFA09 /* PopupSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSearchView.swift; sourceTree = "<group>"; };
 		7AC209632B69A016002FD2B5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7AC209652B69A369002FD2B5 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		7AC209652B69A369002FD2B5 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
 		7AC209672B69A376002FD2B5 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryUtil.swift; sourceTree = "<group>"; };
 		7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
-		7AC209702B69B0C9002FD2B5 /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
 		7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
+		7AC209762B6D9D11002FD2B5 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		7AC209782B6DC5C2002FD2B5 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		7AC2097A2B6DC67B002FD2B5 /* TrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModel.swift; sourceTree = "<group>"; };
 		7AD49F4D2B66C8BA005913D9 /* CocoLocoMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoLocoMixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerApp.swift; sourceTree = "<group>"; };
 		7AD49F522B66C8BA005913D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -64,7 +78,10 @@
 		7AD49F6D2B66C8BD005913D9 /* CocoLocoMixerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoLocoMixerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AD49F7A2B66CD46005913D9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7AD49F982B66FF4B005913D9 /* loading1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading1.json; sourceTree = "<group>"; };
-		7AD49F9B2B67172A005913D9 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		7AFDDB342B6FFC430029EB32 /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
+		7AFDDB372B7046830029EB32 /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
+		7AFDDB392B7059C70029EB32 /* PlayerTick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTick.swift; sourceTree = "<group>"; };
+		7AFDDB452B71BEAC0029EB32 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AD49F7E2B66E148005913D9 /* Lottie in Frameworks */,
+				7AFDDB4B2B71CA810029EB32 /* AnimatedTabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +111,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A2FC2962B78297D00FBFA09 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				7A2FC29D2B782B1800FBFA09 /* BottomBarView.swift */,
+			);
+			path = BottomBar;
+			sourceTree = "<group>";
+		};
+		7A2FC2A22B78354200FBFA09 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				7A2FC2A32B78354C00FBFA09 /* PopupAddView.swift */,
+				7A2FC2A52B78408000FBFA09 /* PopupSearchView.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
 		7AC209692B69AA84002FD2B5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7AC209762B6D9D11002FD2B5 /* AppSettings.swift */,
 				7AC2096A2B69AA92002FD2B5 /* GeometryUtil.swift */,
 				7AC2096E2B69AE44002FD2B5 /* ColorUtil.swift */,
 				7AC209722B6AF98F002FD2B5 /* AudioUtil.swift */,
+				7AFDDB452B71BEAC0029EB32 /* Styles.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -106,6 +143,9 @@
 		7AC2096C2B69AAC7002FD2B5 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				7A2FC2A22B78354200FBFA09 /* Popups */,
+				7A2FC2962B78297D00FBFA09 /* BottomBar */,
+				7AFDDB412B717F300029EB32 /* Track */,
 				7AC2096D2B69AACF002FD2B5 /* Song */,
 			);
 			path = Controls;
@@ -114,9 +154,9 @@
 		7AC2096D2B69AACF002FD2B5 /* Song */ = {
 			isa = PBXGroup;
 			children = (
-				7AC209652B69A369002FD2B5 /* SongModel.swift */,
+				7AC209652B69A369002FD2B5 /* SongViewModel.swift */,
 				7AC209672B69A376002FD2B5 /* SongView.swift */,
-				7AC209702B69B0C9002FD2B5 /* Waveform.swift */,
+				7AFDDB372B7046830029EB32 /* Waveform.swift */,
 			);
 			path = Song;
 			sourceTree = "<group>";
@@ -144,14 +184,11 @@
 		7AD49F4F2B66C8BA005913D9 /* CocoLocoMixer */ = {
 			isa = PBXGroup;
 			children = (
+				7AFDDB362B6FFC480029EB32 /* Pages */,
 				7AC2096C2B69AAC7002FD2B5 /* Controls */,
 				7AC209692B69AA84002FD2B5 /* Utils */,
 				7AD49F9A2B66FF62005913D9 /* Animations */,
 				7AD49F502B66C8BA005913D9 /* CocoLocoMixerApp.swift */,
-				7AD49F7A2B66CD46005913D9 /* LoadingView.swift */,
-				7AD49F522B66C8BA005913D9 /* HomeView.swift */,
-				7AC209632B69A016002FD2B5 /* HomeViewModel.swift */,
-				7AD49F9B2B67172A005913D9 /* Styles.swift */,
 				7AD49F542B66C8BD005913D9 /* Assets.xcassets */,
 				7AD49F562B66C8BD005913D9 /* Preview Content */,
 			);
@@ -191,6 +228,27 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		7AFDDB362B6FFC480029EB32 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				7AD49F7A2B66CD46005913D9 /* LoadingView.swift */,
+				7AD49F522B66C8BA005913D9 /* HomeView.swift */,
+				7AC209632B69A016002FD2B5 /* HomeViewModel.swift */,
+				7AFDDB342B6FFC430029EB32 /* Greetings.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		7AFDDB412B717F300029EB32 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				7AC209782B6DC5C2002FD2B5 /* TrackView.swift */,
+				7AC2097A2B6DC67B002FD2B5 /* TrackViewModel.swift */,
+				7AFDDB392B7059C70029EB32 /* PlayerTick.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +267,7 @@
 			name = CocoLocoMixer;
 			packageProductDependencies = (
 				7AD49F7D2B66E148005913D9 /* Lottie */,
+				7AFDDB4A2B71CA810029EB32 /* AnimatedTabBar */,
 			);
 			productName = CocoLocoMixer;
 			productReference = 7AD49F4D2B66C8BA005913D9 /* CocoLocoMixer.app */;
@@ -284,6 +343,7 @@
 			mainGroup = 7AD49F442B66C8BA005913D9;
 			packageReferences = (
 				7AD49F7C2B66E148005913D9 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				7AFDDB492B71CA800029EB32 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */,
 			);
 			productRefGroup = 7AD49F4E2B66C8BA005913D9 /* Products */;
 			projectDirPath = "";
@@ -328,16 +388,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC209712B69B0C9002FD2B5 /* Waveform.swift in Sources */,
+				7AFDDB382B7046830029EB32 /* Waveform.swift in Sources */,
+				7AC2097B2B6DC67B002FD2B5 /* TrackViewModel.swift in Sources */,
+				7AFDDB352B6FFC430029EB32 /* Greetings.swift in Sources */,
 				7AC2096F2B69AE44002FD2B5 /* ColorUtil.swift in Sources */,
-				7AC209662B69A369002FD2B5 /* SongModel.swift in Sources */,
+				7AC209792B6DC5C2002FD2B5 /* TrackView.swift in Sources */,
+				7AC209662B69A369002FD2B5 /* SongViewModel.swift in Sources */,
+				7AFDDB3A2B7059C70029EB32 /* PlayerTick.swift in Sources */,
+				7A2FC2A42B78354C00FBFA09 /* PopupAddView.swift in Sources */,
 				7AD49F532B66C8BA005913D9 /* HomeView.swift in Sources */,
+				7AFDDB462B71BEAC0029EB32 /* Styles.swift in Sources */,
+				7A2FC29E2B782B1800FBFA09 /* BottomBarView.swift in Sources */,
+				7A2FC2A62B78408000FBFA09 /* PopupSearchView.swift in Sources */,
 				7AD49F512B66C8BA005913D9 /* CocoLocoMixerApp.swift in Sources */,
 				7AC209682B69A376002FD2B5 /* SongView.swift in Sources */,
+				7AC209772B6D9D11002FD2B5 /* AppSettings.swift in Sources */,
 				7AD49F7B2B66CD46005913D9 /* LoadingView.swift in Sources */,
 				7AC209642B69A016002FD2B5 /* HomeViewModel.swift in Sources */,
 				7AC209732B6AF98F002FD2B5 /* AudioUtil.swift in Sources */,
-				7AD49F9C2B67172A005913D9 /* Styles.swift in Sources */,
 				7AC2096B2B69AA92002FD2B5 /* GeometryUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +740,14 @@
 				minimumVersion = 4.4.0;
 			};
 		};
+		7AFDDB492B71CA800029EB32 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/AnimatedTabBar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -679,6 +755,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7AD49F7C2B66E148005913D9 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		7AFDDB4A2B71CA810029EB32 /* AnimatedTabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AFDDB492B71CA800029EB32 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */;
+			productName = AnimatedTabBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

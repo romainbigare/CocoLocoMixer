@@ -8,16 +8,17 @@
 import Foundation
 import AVFoundation
 
-func readBuffer(_ audioUrl: URL,completion:@escaping (_ wave:UnsafeBufferPointer<Float>?)->Void)  {
+func readBuffer(_ audioUrl: URL, completion: @escaping (_ wave: UnsafeBufferPointer<Float>?, _ sampleRate: Double) -> Void) {
     DispatchQueue.global(qos: .utility).async {
         guard let file = try? AVAudioFile(forReading: audioUrl) else {
-            completion(nil)
+            completion(nil, 0.0)
             return
         }
+        let sampleRate = file.fileFormat.sampleRate
         let audioFormat = file.processingFormat
         let audioFrameCount = UInt32(file.length)
         guard let buffer = AVAudioPCMBuffer(pcmFormat: audioFormat, frameCapacity: audioFrameCount)
-        else { return completion(UnsafeBufferPointer<Float>(_empty: ())) }
+        else { return completion(UnsafeBufferPointer<Float>(_empty: ()), sampleRate) }
         do {
             try file.read(into: buffer)
         } catch {
@@ -27,7 +28,7 @@ func readBuffer(_ audioUrl: URL,completion:@escaping (_ wave:UnsafeBufferPointer
         let floatArray = UnsafeBufferPointer(start: buffer.floatChannelData![0], count: Int(buffer.frameLength))
         
         DispatchQueue.main.sync {
-            completion(floatArray)
+            completion(floatArray, sampleRate)
         }
     }
 }

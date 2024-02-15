@@ -54,24 +54,40 @@ extension Color {
 
         return Color(hue: min(max(newHue, 0.0), 1.0), saturation: saturation, brightness: brightness, opacity: alpha)
     }
+    
+    static let background = Color.white // Default background color for light mode
+    
 }
 
-let paletteVintage = ["#ccd5ae", "#e9edc9", "#fefae0", "#faedcd", "#d4a373"]
-let paletteSoftPastels = ["#cdb4db", "#ffc8dd", "#ffafcc", "#bde0fe", "#a2d2ff"]
-let paletteRedVolcano = ["#003049", "#d62828", "#f77f00", "#fcbf49", "#eae2b7"]
-let paletteSalmon = ["#f08080", "f#4978e", "#f8ad9d", "#fbc4ab", "#ffdab9"]
-let paletteNeon = ["#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600"]
-let paletteBlueYellow = ["#115f9a", "#22a7f0", "#76c68f", "#c9e52f", "#f4f100"]
+struct ColorUtil{
+    
+    static let paletteVintage = ["#ccd5ae", "#e9edc9", "#fefae0", "#faedcd", "#d4a373"]
+    static let paletteSoftPastels = ["#cdb4db", "#ffc8dd", "#ffafcc", "#bde0fe", "#a2d2ff"]
+    static let paletteRedVolcano = ["#003049", "#d62828", "#f77f00", "#fcbf49", "#eae2b7"]
+    static let paletteSalmon = ["#f08080", "f#4978e", "#f8ad9d", "#fbc4ab", "#ffdab9"]
+    static let paletteNeon = ["#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600"]
+    static let paletteBlueYellow = ["#115f9a", "#22a7f0", "#76c68f", "#c9e52f", "#f4f100"]
+    static let allPalettes = [paletteNeon, paletteRedVolcano, paletteSoftPastels, paletteBlueYellow, paletteVintage, paletteSalmon]
+    
+    static func getPaletteColor(_ index: Int) -> String {
+        guard allPalettes.flatMap({ $0 }).count > 0 else {
+            return "#ccd5ae"
+        }
 
-// Combine all palettes into a single list
-let allPalettes = [paletteNeon, paletteRedVolcano, paletteSoftPastels, paletteBlueYellow, paletteVintage, paletteSalmon]
-
-func getPaletteColor(_ index: Int) -> String {
-    guard allPalettes.flatMap({ $0 }).count > 0 else {
-        return "#ccd5ae"
+        let flatPalette = allPalettes.flatMap { $0 }
+        let adjustedIndex = (index + flatPalette.count) % flatPalette.count
+        return flatPalette[adjustedIndex]
+    }
+    
+    static func getLinearGradient(color:String) -> LinearGradient {
+        return LinearGradient(
+            gradient: Gradient(colors:[Color(hex:color), Color(hex:color).darker(by:-40)]),
+                    startPoint: .top,
+                    endPoint: .bottom)
     }
 
-    let flatPalette = allPalettes.flatMap { $0 }
-    let adjustedIndex = (index + flatPalette.count) % flatPalette.count
-    return flatPalette[adjustedIndex]
+}
+
+#Preview {
+    WaveformView(data: nil, width: 300, color: ColorUtil.getPaletteColor(4))
 }

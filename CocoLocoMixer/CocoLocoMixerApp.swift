@@ -9,9 +9,7 @@ import SwiftUI
 
 @main
 struct CocoLocoMixerApp: App {
-   
     @StateObject private var viewModel = AppViewModel()
-
     var body: some Scene {
             WindowGroup {
                 NavigationView {
