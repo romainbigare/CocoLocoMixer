@@ -9,12 +9,11 @@ import Foundation
 import SwiftUI
 
 struct TrackView: View {
-    @StateObject var model: TrackViewModel = TrackViewModel()
+    @StateObject var model: Track
     @State private var previewTickPosition: CGFloat = AppSettings.timeMargins
     @State private var tickPosition: CGFloat = AppSettings.timeMargins
     @State private var dragOffset: CGSize = .zero
     @State private var isDragging: Bool = false
-
 
     var body: some View {
             ScrollView(.horizontal, showsIndicators: false){
@@ -23,9 +22,16 @@ struct TrackView: View {
                     
                     HStack(spacing: 0){
                         Spacer(minLength:AppSettings.timeMargins+10)
-                        SongView(url:"something", color:ColorUtil.getPaletteColor(2))
-                        SongView(url:"something", color:ColorUtil.getPaletteColor(3))
-                        SongView(url:"something", color:ColorUtil.getPaletteColor(4))
+                        
+                        if model.songs.isEmpty {
+                            Text("Add songs").offset(y:50)
+                           
+                        } else {
+                            ForEach(model.songs, id: \.id) { song in
+                                SongView(song: song)
+                            }
+                        }
+                        
                         Spacer(minLength:AppSettings.timeMargins)
 
                     }
@@ -52,11 +58,6 @@ struct TrackView: View {
                 }
             }
     }
-}
-
-
-#Preview {
-    TrackView()
 }
 
 

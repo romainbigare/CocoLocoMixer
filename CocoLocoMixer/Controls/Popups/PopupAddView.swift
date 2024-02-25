@@ -5,7 +5,7 @@ struct PopupAddView: View {
     @Binding var isShowingPopup: Bool
     @State var hasAppeared: Bool = false
     @Binding var isShowingPopupSearch:Bool // State variable for the search popup
-
+    @StateObject var track : Track
     
     var body: some View {
         ZStack {
@@ -18,7 +18,9 @@ struct PopupAddView: View {
                     )
                     .onTapGesture {
                             // Handle action for "From Spotify"
-                            isShowingPopup.toggle()
+                        let url1 = "https://www.dropbox.com/s/dl/620qqip91g6td9t/Double%20Violin%20Concerto%201st%20Movement%20-%20J.S.%20Bach.mp3"
+                        
+                        track.addSong(url: url1, color: ColorUtil.getPaletteColor(1))
                     }
                     
                     PopupAddLine(

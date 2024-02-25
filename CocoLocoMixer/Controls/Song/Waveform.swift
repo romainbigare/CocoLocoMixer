@@ -13,7 +13,7 @@ import SwiftUI
 }
 
 struct WaveformView: View {
-    @State var gradientOpacity: Double = 0.8
+    @State var gradientOpacity: Double = 0.5
     let data: [Double]?
     let width: Double
     let color: String
@@ -30,7 +30,7 @@ struct WaveformView: View {
         }
         else{
             WaveformShape(data: [0.1, 0.4, 0.3, 0.1, 0.5, 0.4, 0.2, 0.1, 0.3, 0.1], width: width)
-                .fill(ColorUtil.getLinearGradient(color:color))
+                .fill(ColorUtil.getLinearGradient(color:"#efefef"))
                 .opacity(gradientOpacity)
                 .onAppear {
                    withAnimation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {gradientOpacity = 0.8}

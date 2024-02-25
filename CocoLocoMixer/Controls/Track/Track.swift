@@ -6,14 +6,23 @@
 //
 
 import Foundation
+import SwiftUI
 
 
-class TrackViewModel: ObservableObject {
-        
+class Track: ObservableObject {
+    @Published var songs: [Song] = []
+    
+    func addSong(url: String, color: String) {
+        let newSong = Song(url: url, color: color)
+        songs.append(newSong)
+    }
+    
     func PlayFrom(time:CGFloat){
         let currentTime = AppSettings.pixelsToTime(currentTime: time)
         
         // play from there
         
     }
+    
+    
 }

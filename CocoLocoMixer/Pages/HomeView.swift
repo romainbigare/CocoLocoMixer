@@ -9,13 +9,17 @@ import SwiftUI
 
 
 struct HomeView: View {
-    @ObservedObject var viewModel = HomeViewModel()
+    @ObservedObject var homeViewModel = HomeViewModel()
+    @StateObject var track = Track()
+    
     @State private var hasGreetedUser = true
     @State private var isTitleVisible = false
     @State private var rotationAngle: Angle = .degrees(0)
     @State private var isShowingPopupAdd = false
     @State private var isShowingPopupSearch:Bool = false // State variable for the search popup
     @State private var isPlaying = false
+    @State private var downloadedFile: URL? // Store the downloaded file
+
     
     var arePopupsOpen: Bool {
         return isShowingPopupAdd || isShowingPopupSearch
@@ -31,7 +35,7 @@ struct HomeView: View {
         else{
             ZStack {
                 ZStack{
-                    TrackView()
+                    TrackView(model: track)
                         .blur(radius: arePopupsOpen ? 25 : 0)
                         .onTapGesture {
                             // Close all popups when tapping outside
@@ -50,12 +54,16 @@ struct HomeView: View {
                 if isShowingPopupAdd {
                     PopupAddView(
                         isShowingPopup: $isShowingPopupAdd,
-                        isShowingPopupSearch: $isShowingPopupSearch
+                        isShowingPopupSearch: $isShowingPopupSearch,
+                        track : track
                     )
                 }
                 
                 if isShowingPopupSearch{
-                    PopupSearchView(isShowingPopup: $isShowingPopupSearch)
+                    PopupSearchView(
+                        isShowingPopup: $isShowingPopupSearch,
+                        track : track
+                    )
                 }
             }
             .background(Color.black)

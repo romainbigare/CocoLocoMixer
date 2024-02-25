@@ -6,13 +6,20 @@
 //
 import Foundation
 import AVFoundation
+import SwiftUI
 
-class SongViewModel: ObservableObject {
+class Song: ObservableObject {
+    let id = UUID() // Provide a unique identifier for each song
     @Published var waveformData: [Double]?
     var isLoadingSong : Bool = true
     var duration : Double?
+    var url: String
+    var color: String
     
-    init(url: String) {
+    init(url: String, color:String) {
+        self.url = url
+        self.color = color
+        
         generateWaveformData(filePath: url)
     }
     

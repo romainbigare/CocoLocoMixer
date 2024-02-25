@@ -14,6 +14,7 @@ struct AppSettings {
     static var secondsToPixelsMultiplier: Double = 1.7 * globalZoomLevel
     static var timeMargins : CGFloat = 75.0
     static var globalZoomLevel : Double = 1.0
+    static var youtubeAPIKey : String = "AIzaSyBhVKghpKvoOJ82k_LDBXgXo50TbJKRfGM"
     
     // one second is one pixel * waveformWidthMultiplier
     // Add other settings as needed
